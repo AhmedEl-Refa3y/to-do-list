@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Tasks</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- <div id="name-screen" class="name-screen" style="margin-top: 0px">
+      <label for="userName">الرجاء إدخال اسمك:</label>
+      <input type="text" id="userName" placeholder="ادخل اسمك" />
+      <button onclick="startTaskManager()">بدء</button>
+    </div> -->
+
+    <div id="task-screen" class="task-screen" style="">
+      <div class="task-manager">
+        <h1>مدير المهام اليومي</h1>
+        <p id="userGreeting"></p>
+        <input type="text" id="taskInput" placeholder="أضف مهمة" />
+        <span>Deadline : </span>
+        <input type="datetime-local" id="deadlineInput" />
+        <button onclick="addTask()">إضافة</button>
+        <ul id="taskList"></ul>
+        <div
+          id="noTasksMessage"
+          style="
+            font-size: xx-large;
+            font-weight: bold;
+            transform: translate(0px, -150px);
+          "
+        >
+          لا يوجد مهام
+        </div>
+      </div>
+      <div class="history" id="history">
+        <h2>Task History</h2>
+        <ul id="historyList"></ul>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
